@@ -1,0 +1,336 @@
+*{
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    min-height: 1000px;
+}
+
+/*------ Header -------- */
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 40px 100px;
+   z-index: 10000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: 0.5s;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    text-decoration: none;
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+
+/*  -------- Section banner --------- */
+.banner{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;  /* 100% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/bg3.jpeg");
+     background-size: cover; 
+}
+p{
+    line-height: 25px;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h1{
+    font-size: 80px;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 16px;
+    color: #fff;
+}
+.btn{
+    font-size: 16px;
+    color: #fff;
+    background: #ff0157;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+
+
+/* -----section------- */
+
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titleText{
+    color: #111;
+    font-size: 32px;
+    font-weight: 300;
+}
+.titleText span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 35px;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+/* -----menu section -----*/
+
+.title{
+    width: 100%;
+   /* text-align: center; */
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+.menu .content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 500px;
+    margin: 1s0px;
+    border: 15px solid #fff;
+}
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+}
+.menu .content .box .text h3{
+    padding: 15px  5px;
+    text-align: center;
+    font-weight: 700;
+     color: #111;
+     
+}
+
+/* -----famous section -----*/
+
+.expert .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.expert .content .box{
+    width: 350px;
+   margin: 10px; 
+}
+.expert .content .box .imgBx{
+    position: relative;
+    width: 100%;
+     /* height: 200px;  */
+}
+.expert .content .box .imgBx img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
+}
+.expert .content .box .text h2{
+    padding: 15px  5px;
+    text-align: center;
+    font-weight: 700;
+     color: #111; 
+}
+
+/* -----Testimonial section -----*/
+
+.testimonials{
+    padding: 0px 10px;
+    width: 100%;
+    height: 700px;
+    background: url("img/land.jpg");
+    background-size: cover;
+}
+ .tit_le .title_Text {
+    color: #fff;
+}
+.tit_le p{
+    color: #fff;
+} 
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+     margin-top: 40px; 
+}
+.testimonials .content .box{
+    width: 500px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials .content .box .imgBx{
+     /* position: relative;  */
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .content .box .imgBx img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
+}
+.testimonials .content .box .text {
+    text-align: center;
+}
+.testimonials .content .box .text p{
+    font-style: italic;
+    color: #666;
+}
+.testimonials .content .box .text h3{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff0157;
+    font-weight: 700;
+}
+.contact .title{
+     margin-bottom: 40px;
+}
+/* .contactForm{
+     padding: 75px 50px; 
+     background: #fff;
+     max-width: 500px;
+     margin-top: 50px;
+} */
+.contactForm .col {
+  float: left;
+  width: 60%;
+}
+
+.contactForm h3{
+    color: #111;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 50%;
+    border: 1px black solid;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 16px;
+    color: #fff;
+    background: #ff0157;
+    display: inline;
+    max-width: 100px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+    letter-spacing: 5px;
+}
+.copyrightText{
+    padding: 8ps 40px;
+    text-align: center;
+}
+.copyrightText p{
+    color: #333;
+}
+.copyrightText a{
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 500;
+    
+
+}
